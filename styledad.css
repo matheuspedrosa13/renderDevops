@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(assets/img-3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+#text{
+    position: absolute;
+}
+header{
+    z-index: 1;
+    width: 100%;
+    height: 13vh;
+    background-color: rgb(43, 43, 79);
+    position: fixed;
+}
+span{
+    display: inline-block; 
+    font-size: 30px;
+}
+nav{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+div{
+    display: inline-block;
+}
+
+#span1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    margin-left: 20px;
+}
+#span2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: blue;
+}
+label {
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  /* CSS quando o checkbox está marcado */
+  #menu-bar:checked ~ label img {
+    transform: rotate(-90deg);
+    transition: 1s;
+  }
+
+  #aside1 {
+    width: 6vw;
+    background-color: rgb(43, 43, 79);
+    height: 88vh;
+    font-family: "calibri";
+    position: fixed;
+    top: 76px;
+  }
+  #aside1 nav img{
+    display: none;
+    margin-left: 35px;
+  }
+  #menu-bar:checked ~ #aside1 nav img{
+    display: flex;
+  }
+  #aside1 nav span{
+    display: none;
+  }
+  
+  #menu-bar:checked ~ #aside1 nav span{
+    display: inline-block;
+  }
+  #aside1 nav p{
+    display: none;
+    margin-left: 60px;
+  }
+  #menu-bar:checked ~ #aside1 nav p{
+    display: flex;
+  }
+  #menu-bar:checked ~ #aside1 #aside-nav{
+    height: 50%;
+    position: relative;
+    top: 0;
+  }
+  #aside1 #aside-nav{
+    height: 50%;
+    top: 30%;
+    position: relative;
+  }
+  label img{
+    transition: 1s;
+    padding: 21px;
+  }
+ #nome{
+    margin-top: 15px;
+ }
+  #menu-bar{
+    display: none;
+    position: fixed;
+  }
+  #labl{
+    z-index: 1;
+    position: fixed;
+    bottom: 88.5%;
+    left: 27%;
+  }
+  #menu-bar:checked ~ #aside1{
+    width: 17vw;
+    background-color: rgb(43, 43, 79);
+    height: 89vh;
+    font-family: "calibri";
+  }
+  #aside-nav{
+    width: 100%;
+    text-align: center;  
+  }
+  button{
+    width: 100%;
+    padding: 10px 0;
+    background-color: rgb(43, 43, 79);
+    text-align: justify;
+    border: none;
+  } 
+  button:hover:not(.botao){
+    width: 100%;
+    padding: 10px 0;
+    background-color: rgb(123, 123, 188);
+    text-align: justify;
+    color: black;
+} 
+  button span{
+    font-size: 1.6vw;
+    padding: 0 10px;
+    position: relative;
+    bottom: 6px;
+  }
+  ion-icon{
+    margin-left: 25px;
+    font-size: 25px;
+  }
+  a button{
+    color: white;
+  }
+  #aside-nav p{
+    color: white;
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  #loguinho{
+    width: 10vw;
+    height: 13vh;
+  }
+  nav #sair{
+    width: 50px;
+    height: 40px;
+    position: absolute;
+    text-align: center;
+    right: 20px;
+    top: 14px;
+    background-color: rgb(102, 102, 203);
+    font-family: "calibri";
+  }
+  nav #sair p{
+    margin-top: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+  }
+  main{
+    margin-left: 18%;
+    position: relative;
+    top: 100px;
+    width: 92.5vw;
+    text-align: center;
+    height: 90vh;
+    width: 70vw;
+    background-color: #b8b8b8e7;
+    border-radius: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-bottom: 20px;
+  }
+  main button{
+    width: 100px;
+  }
+  #tabelas{
+    display: flex;
+    justify-content: space-around;   
+    text-align: center; 
+}
+
+#tabelas div{
+  padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    min-width: 300px;
+    border: 1px solid;
+    min-height: 250px;
+    background-color: rgba(128, 128, 128, 0.556);
+}
+h3{
+  margin: 20px;
+}
+li{
+  list-style: none;
+}
+.botao{
+  background-color: rgba(244, 72, 38, 0.854);
+  color: white;
+  font-weight: bolder;
+  text-align: center;
+}
+#h2-form{ 
+  color: black;
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+article{
+  margin: 30px;
+}
+main #tabelas div{
+  height: 40%;
+}
+#adicionar, #remover{
+  padding: 9px;
+  cursor: pointer;
+}
