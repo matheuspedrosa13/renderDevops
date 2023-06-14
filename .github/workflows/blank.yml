@@ -1,0 +1,26 @@
+name: CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      # Runs a single command using the runners shell
+      - name: Render Deploy Action
+
+        uses: johnbeynon/render-deploy-action@v0.0.8
+        with:
+              # ID of the service to deploy
+            service-id: https://api.render.com/deploy/srv-cht3rhbhp8u4v7sk3ms0?key=66ei0njZyx4 
+              # A Render API key
+            api-key: rnd_zO5zrqone0yiE4n0KSjwHQwOce2b
